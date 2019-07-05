@@ -177,16 +177,10 @@ function fabrikaOlustur(isim = 'Önceki Yazılımcı AŞ') {
 
 ## **Fonksiyonlar**
 ### Fonksiyon Argümanları (İdeal olanı 2 ya da daha az)
-Limiting the amount of function parameters is incredibly important because it
-makes testing your function easier. Having more than three leads to a
-combinatorial explosion where you have to test tons of different cases with
-each separate argument.
+Fonksiyon parametrelerinin sayısını sınırlandırmak fonksiyonumuzu test etmeyi kolaylaştıracağı için oldukça önemlidir. Üçten fazla parametre kullanmak kombinatoryal patlamaya sebep olacağından, çeşitli senaryolardaki her argüman için tonlarca test yapmamıza sebep olmaktadır.
 
-One or two arguments is the ideal case, and three should be avoided if possible.
-Anything more than that should be consolidated. Usually, if you have
-more than two arguments then your function is trying to do too much. In cases
-where it's not, most of the time a higher-level object will suffice as an
-argument.
+İdeal durumda bir veya iki argüman kullanılmalı, eğer mümkünse üçüncü argümandan kaçınılmalıdır.
+İkiden fazla olan argümanları konsolide etmek gerekir. Bir fonksiyonda iki argümandan fazla argüman varsa genellikle o fonksiyon kapasitesinin üstünde iş yapmaya çalışıyordur. Aksi durumlarda da çoğunlukla üst-seviye bir obje argümanları sağlayacak yeterliktedir. 
 
 Since JavaScript allows you to make objects on the fly, without a lot of class
 boilerplate, you can use an object if you are finding yourself needing a
